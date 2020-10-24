@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>"User Details</title>
+        <Script>
+            function submit() 
+            {
+                var username=document.form1.name.value;
+                var dateselected=document.form1.date.value;
+                var country=document.form1.options.value;
+                var gender=document.form1.gender.value;
+                document.write('<h1>The name is</h1>'+username+'<h1>The date selected is</h1>'+dateselected+'<h1>your country is</h1>'+country+'<h1>your gender is</h1>'+gender)
+                
+            }
+            </Script>
+    </head>
+    <form method="POST" href="#" name="form1" action=return submit()>
+    <div>
+    <p><input type="text" placeholder="enter your name" id="name"/></p>
+    <p><input type="date" placeholder="select date" id="date"/></p>
+    <p>
+        <p><b>Select your country</b></p>
+        <select id="options">
+        <option>India</option>
+        <option>America</option>
+        <option>China</option>
+        <option>Australia</option>
+        </select>
+    </p>
+    <p><b>Select gender</b></p>
+    <p><input type="radio" name="gender" value="male">male</p>
+    <p><input type="radio" name="gender" value="female">female</p>
+
+    </div>
+   </form>
+   <p>
+       <div>
+           <p><b>click submit</b></p>
+       <input type="submit" onClick=submit()></input>
+        </div>
+   </p>
+</html>
